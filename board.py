@@ -8,7 +8,7 @@ class Root(tk.Tk):
             self.items = items
         self.title("Scripts GUI")
         self.geometry("300x400")
-        item1 = tk.Label(self, text=" -- add items --", bg="lightgrey", fg="green", pady=10)
+        item1 = tk.Label(self, text=" -- add items --", bg="lightgrey", fg="white", pady=10)
         self.items.append(item1)
         for item in self.items:
             item.pack(side=tk.TOP, fill=tk.X)
