@@ -1,2 +1,2 @@
 # GUI_Tkinter
-# Notes from testing Tkinter class approach for Daily scripts Board
+ Notes from testing Tkinter class approach, Daily Scripts Board project
