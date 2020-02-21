@@ -1,8 +1,7 @@
 import tkinter as tk
 
 window = tk.Tk()
-window.geometry("300x400")
-greeting = tk.Label(text=" Hello")
-greeting.pack()
+label = tk.Label(text="    Python rocks!   ", fg= "white", bg="black")
+label.pack()
 
 window.mainloop()
