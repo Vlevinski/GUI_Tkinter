@@ -19,7 +19,7 @@ def main():
     root.columnconfigure(0, weight=1)
     root.columnconfigure(1, weight=1)
 
-    # show labels on it
+    # show labels
     label = tk.Label(left, text = "Hello World")
     label.pack()
     label = tk.Label(right, text = "Console Output")
