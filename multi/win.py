@@ -19,8 +19,14 @@ class Win1:
         self.master = master
         self.master.geometry("300x400")
         self.master.title("Window")
+        self.frame1 = tk.Frame(master)
+        self.frame1.pack()
+        self.label_two = tk.Label(master, text=" This is the second window")
+        self.label_two.pack()
 
 
 root = tk.Tk()
 app = GUI(root)
+win1 = tk.Toplevel(root)
+app1 = Win1(win1)
 root.mainloop()
