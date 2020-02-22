@@ -5,8 +5,8 @@ class GUI:
 
     def __init__(self, master):
         self.master = master
-        self.master.geometry("300x400+100+100")
-        self.master.resizable(50, 50)
+        self.master.geometry("300x400+200+200")
+        self.master.resizable(100, 100)
         self.master.title(" Master")
         self.frame = tk.Frame(master)
         self.frame.pack()
@@ -18,9 +18,9 @@ class Win1:
 
     def __init__(self, master, text_one):
         self.master = master
-        self.master.geometry("300x400+200+200")
+        self.master.geometry("300x400")
         self.master.overrideredirect(0)
-        self.master.resizable(10, 10)
+        self.master.resizable(50, 50)
         self.master.title("Window")
         self.frame1 = tk.Frame(master)
         self.frame1.pack()
