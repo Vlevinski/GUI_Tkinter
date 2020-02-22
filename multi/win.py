@@ -18,6 +18,9 @@ class Win1:
     def __init__(self, master, text_one):
         self.master = master
         self.master.geometry("300x400")
+        #        self.master.overrideredirect(1)
+        self.master.resizable(0, 0)
+
         self.master.title("Window")
         self.frame1 = tk.Frame(master)
         self.frame1.pack()
@@ -29,12 +32,12 @@ root = tk.Tk()
 app = GUI(root)
 
 win1 = tk.Toplevel(root)
-app1 = Win1(win1,"First window")
+app1 = Win1(win1, "First window")
 
 win2 = tk.Toplevel(root)
-app2 = Win1(win2,"Second window")
+app2 = Win1(win2, "Second window")
 
 win3 = tk.Toplevel(root)
-app3 = Win1(win3,"Third window")
+app3 = Win1(win3, "Third window")
 
 root.mainloop()
