@@ -27,6 +27,11 @@ class Win1:
 
 root = tk.Tk()
 app = GUI(root)
+
 win1 = tk.Toplevel(root)
 app1 = Win1(win1)
+
+win2 = tk.Toplevel(root)
+app2 = Win1(win2)
+
 root.mainloop()
