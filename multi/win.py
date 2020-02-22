@@ -1,6 +1,10 @@
 import tkinter as tk
 
 
-gui = tk.Tk()
-gui.geometry("300x400")
-gui.mainloop()
+class GUI:
+    pass
+
+
+root = tk.Tk()
+app = GUI()
+root.mainloop()
