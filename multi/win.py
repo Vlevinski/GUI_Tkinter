@@ -2,9 +2,11 @@ import tkinter as tk
 
 
 class GUI:
-    pass
+
+    def __init__(self, master):
+        self.master = master
 
 
 root = tk.Tk()
-app = GUI()
+app = GUI(root)
 root.mainloop()
