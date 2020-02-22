@@ -9,7 +9,7 @@ class GUI:
         self.master.title(" Master")
         self.frame = tk.Frame(master)
         self.frame.pack()
-        self.label_one = tk.Label(text="Click to open new window")
+        self.label_one = tk.Label(text="Click to open new window", bg="#B0C4DE")
         self.label_one.pack()
 
 
@@ -21,7 +21,7 @@ class Win1:
         self.master.title("Window")
         self.frame1 = tk.Frame(master)
         self.frame1.pack()
-        self.label_two = tk.Label(master, text=" This is the second window")
+        self.label_two = tk.Label(master, text=" This is the second window", bg="#FFC0CB")
         self.label_two.pack()
 
 
