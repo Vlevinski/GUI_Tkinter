@@ -10,5 +10,6 @@ Several important Tkinter concepts:
 - How to control your application layout with **geometry managers**
 - How to make your applications **interactive**
 - How to use five basic Tkinter** widgets** (Label, Button, Entry, Text, and Frame)
+- Timer, Calendar window
 
 ![multi.png](multi.png)
