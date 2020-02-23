@@ -1,6 +1,7 @@
 import tkinter as tk
 import time
 
+
 class GUI:
 
     # gui main window
@@ -14,10 +15,9 @@ class GUI:
         self.quit = tk.Button(self.master, text="Create new", command=self.new_window)
         self.quit.pack()
 
-
     def new_window(self):
         self.new = tk.Toplevel(self.master)
-        Win1(self.new,"New window")
+        Win1(self.new, "New window")
 
 
 class Win1:
@@ -37,7 +37,9 @@ class Win1:
     def close_window(self):
         self.master.destroy()
 
-class Timer:
+
+'''
+class Stimer:
 
     # timer window
     def __init__(self,master):
@@ -46,29 +48,31 @@ class Timer:
         self.master.title("Timer")
         self.frame2 = tk.Frame(master)
         self.frame2.pack()
+'''
+
+
+class Timer:
+    def __init__(self, master):
+        self.master = master
+        self.master.geometry("150x48+10+10")
+        self.master.title("Timer")
+        self.clock = tk.Label(self.master, font=('times', 30, 'bold'), bg='green')
+        self.clock.grid(row=0, column=1)
+
+    def tick(self):
+        time_string = time.strftime('%H:%M:%S')
+        self.clock.config(text=time_string)
+        self.clock.after(200, self.tick)
+
 
 root = tk.Tk()
 app = GUI(root)
 
 # no static windows
-#win1 = tk.Toplevel(root)
-#app1 = Win1(win1, "First window")
+# win1 = tk.Toplevel(root)
+# app1 = Win1(win1, "First window")
 
-# timer
-def tick():
-    global time1
-    time2 = time.strftime('%H:%M:%S')
-    if time2 != time1:
-        time1 = time2
-        clock.config(text=time2)
-    clock.after(200, tick)
-
-win1 = tk.Toplevel(root)
-app1 = Win1(win1, "First window")
-win1.geometry("100x70+0+0")
-time1 = ''
-clock = tk.Label(win1, font=('times', 20, 'bold'), bg='green')
-clock.pack(side=tk.TOP, anchor=tk.E)
-
-tick()
+tm = tk.Toplevel(root)
+app2 = Timer(tm)
+app2.tick()
 root.mainloop()
