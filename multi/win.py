@@ -1,6 +1,6 @@
 import tkinter as tk
 import time
-
+import datetime
 
 class GUI:
 
@@ -54,10 +54,13 @@ class Stimer:
 class Timer:
     def __init__(self, master):
         self.master = master
-        self.master.geometry("150x48+10+10")
+        self.master.geometry("200x70+10+10")
         self.master.title("Timer")
+        self.date1 = tk.Label(self.master, text=f"{datetime.datetime.now():%a, %b %d %Y}", fg="red", font=("helvetica", 12))
+        self.date1.pack()
         self.clock = tk.Label(self.master, font=('times', 30, 'bold'), bg='green')
-        self.clock.grid(row=0, column=1)
+#        self.clock.grid(row=0, column=1)
+        self.clock.pack()
 
     def tick(self):
         time_string = time.strftime('%H:%M:%S')
