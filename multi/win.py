@@ -2,6 +2,7 @@ import tkinter as tk
 import time
 import datetime
 
+
 class GUI:
 
     # gui main window
@@ -72,8 +73,8 @@ root = tk.Tk()
 app = GUI(root)
 
 # no static windows
-# win1 = tk.Toplevel(root)
-# app1 = Win1(win1, "First window")
+win1 = tk.Toplevel(root)
+app1 = Win1(win1, "First window")
 
 tm = tk.Toplevel(root)
 app2 = Timer(tm)
