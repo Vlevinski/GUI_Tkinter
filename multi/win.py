@@ -1,6 +1,6 @@
 import tkinter as tk
 import time
-import datetime
+import datetime as dt
 
 
 class GUI:
@@ -39,28 +39,36 @@ class Win1:
         self.master.destroy()
 
 
-'''
-class Stimer:
+class Framic:
 
     # timer window
     def __init__(self,master):
         self.master = master
-        self.master.geometry("100x65+100+100")
-        self.master.title("Timer")
+        self.master.geometry("300x100")
+        self.master.title("Framic")
+
         self.frame2 = tk.Frame(master)
+        self.frame2l = tk.Label(self.frame2, text="Frame2", fg="white", font=("helvetica", 12))
+        self.frame2l.pack()
         self.frame2.pack()
-'''
+        self.frame3 = tk.Frame(master)
+        self.frame3l = tk.Label(self.frame3, text=" ", fg="black", font=("helvetica", 12))
+        self.frame3l.pack()
+        self.frame3.pack()
+        self.frame4 = tk.Frame(master)
+        self.frame4l = tk.Label(self.frame4, text="Frame3", fg="white", font=("helvetica", 12))
+        self.frame4l.pack()
+        self.frame4.pack()
 
 
 class Timer:
     def __init__(self, master):
         self.master = master
-        self.master.geometry("200x70+10+10")
+        self.master.geometry("200x120+10+10")
         self.master.title("Timer")
-        self.date1 = tk.Label(self.master, text=f"{datetime.datetime.now():%a, %b %d %Y}", fg="red", font=("helvetica", 12))
+        self.date1 = tk.Label(self.master, text=f"{dt.datetime.now():%a, %b %d, %Y \n}", fg="black", font=("helvetica", 12))
         self.date1.pack()
-        self.clock = tk.Label(self.master, font=('times', 30, 'bold'), bg='green')
-#        self.clock.grid(row=0, column=1)
+        self.clock = tk.Label(self.master, font=('times', 30, 'bold'), bg='green', fg="white")
         self.clock.pack()
 
     def tick(self):
@@ -76,7 +84,14 @@ app = GUI(root)
 win1 = tk.Toplevel(root)
 app1 = Win1(win1, "First window")
 
+win3 = tk.Toplevel(root)
+app3 = Framic(win3)
+
+win4 = tk.Toplevel(root)
+app4 = Framic(win4)
+
 tm = tk.Toplevel(root)
 app2 = Timer(tm)
 app2.tick()
+
 root.mainloop()
