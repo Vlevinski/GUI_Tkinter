@@ -44,21 +44,43 @@ class Framic:
     # timer window
     def __init__(self,master):
         self.master = master
-        self.master.geometry("300x100")
+        self.master.geometry("100x300")
         self.master.title("Framic")
+        self.master.configure(background="LightBlue1")
+        self.l1 = self.label("\nFrame1").pack()
+        self.l2 = self.label("\nFrame2").pack()
 
-        self.frame2 = tk.Frame(master)
-        self.frame2l = tk.Label(self.frame2, text="Frame2", fg="white", font=("helvetica", 12))
-        self.frame2l.pack()
-        self.frame2.pack()
-        self.frame3 = tk.Frame(master)
-        self.frame3l = tk.Label(self.frame3, text=" ", fg="black", font=("helvetica", 12))
-        self.frame3l.pack()
-        self.frame3.pack()
-        self.frame4 = tk.Frame(master)
-        self.frame4l = tk.Label(self.frame4, text="Frame3", fg="white", font=("helvetica", 12))
-        self.frame4l.pack()
-        self.frame4.pack()
+    def label(self, txt):
+        return tk.Label(self.master, text=txt, fg="white", bg="LightBlue1",font=("helvetica", 12))
+
+
+class Buttonic:
+
+    # timer window
+    def __init__(self,master):
+        self.master = master
+        self.master.geometry("100x300")
+        self.master.title("Framic")
+        self.master.configure(background="LightBlue1")
+
+        self.btn1 = self.btn("btn1")
+        self.btn1.pack()
+
+        self.btn2 = self.png_btn("ic_group_black_24dp.png")
+        self.btn2.pack()
+
+        self.btn3 = self.btn("btn3")
+        self.btn3.pack()
+
+    def btn(self, txt):
+        return tk.Button(self.master, text=txt, fg="white", bg="LightBlue1",font=("helvetica", 12))
+
+    def png_btn(self, png_file):
+        self.photo = tk.PhotoImage(file=png_file, master=self.master)
+        self.button= tk.Button(self.master)
+        self.button.config(image=self.photo)
+        return self.button
+
 
 
 class Timer:
@@ -88,7 +110,7 @@ win3 = tk.Toplevel(root)
 app3 = Framic(win3)
 
 win4 = tk.Toplevel(root)
-app4 = Framic(win4)
+app4 = Buttonic(win4)
 
 tm = tk.Toplevel(root)
 app2 = Timer(tm)
