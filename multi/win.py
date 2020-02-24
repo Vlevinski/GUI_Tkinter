@@ -22,7 +22,7 @@ btn(photo1)
 btn(photo2)
 btn(photo3)
 btn(photo4)
-btn(photo5)
+
 
 
 root.mainloop()
