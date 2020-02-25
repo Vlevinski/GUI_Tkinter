@@ -3,8 +3,8 @@ from tkinter import ttk
 import datetime as dt
 import time
 
-class GUI:
 
+class GUI:
 
     def __init__(self, master):
         # gui window
@@ -24,9 +24,7 @@ class GUI:
 
 class Win1:
 
-
     def __init__(self, master, text_one):
-        # new window
         self.master = master
         self.master.geometry("300x400")
         self.master.overrideredirect(0)
@@ -43,8 +41,7 @@ class Win1:
 
 class Framic:
 
-
-    def __init__(self,master):
+    def __init__(self, master):
         # frames window
         self.master = master
         self.master.geometry("100x300")
@@ -54,13 +51,12 @@ class Framic:
         self.l2 = self.label("\nFrame2").pack()
 
     def label(self, txt):
-        return tk.Label(self.master, text=txt, fg="white", bg="LightBlue1",font=("helvetica", 12))
+        return tk.Label(self.master, text=txt, fg="white", bg="LightBlue1", font=("helvetica", 12))
 
 
 class Buttonic:
 
-
-    def __init__(self,master):
+    def __init__(self, master):
         # pic buttons
         self.master = master
         self.master.geometry("40x210")
@@ -73,30 +69,29 @@ class Buttonic:
         self.png_btn(photo6)
 
     def btn(self, txt):
-        return tk.Button(self.master, text=txt, fg="white", bg="LightBlue1",font=("helvetica", 12))
+        return tk.Button(self.master, text=txt, fg="white", bg="LightBlue1", font=("helvetica", 12))
 
     def png_btn(self, png_file):
-        self.button= ttk.Button(self.master)
+        self.button = ttk.Button(self.master)
         self.button.pack()
         self.button.config(image=png_file)
         return self.button
 
+
 class Colorite:
 
-    def __init__(self,master):
+    def __init__(self, master):
         # colorite window
         self.master = master
         self.master.geometry("80x300")
         self.master.title("Colorit")
         self.btn()
 
-
     def btn(self):
         # btn multicolor
-        colors = ["blue","yellow","green","red","violet","pink","brown","grey","orange"]
+        colors = ["blue", "yellow", "green", "red", "violet", "pink", "brown", "grey", "orange"]
         for txt in colors:
-            tk.Button(self.master, text=txt, bg="white", fg=txt,font=("helvetica", 12)).pack(fill=tk.X)
-
+            tk.Button(self.master, text=txt, bg="white", fg=txt, font=("helvetica", 12)).pack(fill=tk.X)
 
 
 class Timer:
@@ -105,11 +100,11 @@ class Timer:
         self.master = master
         self.master.geometry("200x120+10+10")
         self.master.title("Timer")
-        self.date1 = tk.Label(self.master, text=f"{dt.datetime.now():%a, %b %d, %Y \n}", fg="black", font=("helvetica", 12))
+        self.date1 = tk.Label(self.master, text=f"{dt.datetime.now():%a, %b %d, %Y \n}", fg="black",
+                              font=("helvetica", 12))
         self.date1.pack()
         self.clock = tk.Label(self.master, font=('times', 30, 'bold'), bg='green', fg="white")
         self.clock.pack()
-
 
     def tick(self):
         time_string = time.strftime('%H:%M:%S')
