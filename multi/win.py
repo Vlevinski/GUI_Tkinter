@@ -3,7 +3,6 @@ from tkinter import ttk
 import datetime as dt
 import time
 
-
 class GUI:
 
 
@@ -41,21 +40,6 @@ class Win1:
     def close_window(self):
         self.master.destroy()
 
-    def text(self):
-        txt = '''+-----------+------+------------+-----------------+
-| City name | Area | Population | Annual Rainfall |
-+-----------+------+------------+-----------------+
-|  Adelaide | 1295 |  1158259   |      600.5      |
-|  Brisbane | 5905 |  1857594   |      1146.4     |
-|   Darwin  | 112  |   120900   |      1714.7     |
-|   Hobart  | 1357 |   205556   |      619.5      |
-|   Sydney  | 2058 |  4336374   |      1214.8     |
-| Melbourne | 1566 |  3806092   |      646.9      |
-|   Perth   | 5386 |  1554769   |      869.4      |
-+-----------+------+------------+-----------------+
-        '''
-        self.text = tk.Label(self.master, text=txt)
-        self.text.pack()
 
 class Framic:
 
@@ -131,16 +115,10 @@ class Timer:
         time_string = time.strftime('%H:%M:%S')
         self.clock.config(text=time_string)
         self.clock.after(200, self.tick)
-'''
-def create_pt(data):
-    x.field_names = data[0]
-    for idx in data[1:]:
-        x.add_row(idx)
-'''
+
+
 root = tk.Tk()
 app = GUI(root)
-
-
 
 photo1 = tk.PhotoImage(file="ic_group_black_24dp.png")
 photo2 = tk.PhotoImage(file="ic_mood_black_24dp.png")
@@ -152,7 +130,6 @@ photo6 = tk.PhotoImage(file="ic_whatshot_black_24dp.png")
 # no static windows
 win1 = tk.Toplevel(root)
 app1 = Win1(win1, "First window")
-
 
 win3 = tk.Toplevel(root)
 app3 = Framic(win3)
