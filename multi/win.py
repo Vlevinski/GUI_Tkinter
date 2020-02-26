@@ -188,6 +188,12 @@ image = tk.PhotoImage(file='plot.png')
 label = tk.Label(win1, image=image)
 label.pack()
 
+win7 = tk.Toplevel(root)
+app7 = Win1(win7)
+image7 = tk.PhotoImage(file='plot1.png')
+label = tk.Label(win7, image=image7)
+label.pack()
+
 tm = tk.Toplevel(root)
 app2 = Timer(tm)
 app2.tick()
