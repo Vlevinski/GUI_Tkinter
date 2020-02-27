@@ -1,7 +1,4 @@
 import tkinter as tk
-from tkinter import ttk
-import datetime as dt
-import time
 from multi.gui import GUI,Win1,Tables,Framic, Buttonic, Colorite, Timer
 
 
