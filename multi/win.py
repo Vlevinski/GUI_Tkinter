@@ -76,7 +76,7 @@ class Tables:
             self.listBox.heading(col, text=col)
         self.listBox.pack()
 
-        tk.Button(self.master, text="Show scores", width=10, command=self.show).pack()
+        tk.Button(self.master, text="Show data", width=10, command=self.show).pack()
 
     def close_window(self):
         self.master.destroy()
