@@ -1,7 +1,6 @@
 import tkinter as tk
 from multi.gui import GUI, Win1, Tables, Framic, Buttonic, Colorite, Timer
 
-
 root = tk.Tk()
 
 # main window
@@ -41,6 +40,5 @@ app7 = Win1(win7)
 image7 = tk.PhotoImage(file='img/plot1.png')
 label = tk.Label(win7, image=image7)
 label.pack()
-
 
 root.mainloop()
