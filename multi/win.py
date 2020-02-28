@@ -6,23 +6,23 @@ root = tk.Tk()
 # main window
 app = GUI(root)
 
-# image
+#  image
 win1 = tk.Toplevel(root)
 app1 = Win1(win1)
 image = tk.PhotoImage(file='img/plot.png')
 label = tk.Label(win1, image=image)
 label.pack()
 
-# timer
+#  timer
 tm = tk.Toplevel(root)
 app2 = Timer(tm)
 app2.tick()
 
-# frames
+#  frames
 win3 = tk.Toplevel(root)
 app3 = Framic(win3)
 
-# buttons with icons
+#  buttons with icons
 win4 = tk.Toplevel(root)
 app4 = Buttonic(win4)
 
