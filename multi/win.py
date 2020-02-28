@@ -26,15 +26,15 @@ app3 = Framic(win3)
 win4 = tk.Toplevel(root)
 app4 = Buttonic(win4)
 
-#  buttons in color
+# buttons in color
 win5 = tk.Toplevel(root)
 app5 = Colorite(win5)
 
-#  spredsheet
+# spredsheet
 win6 = tk.Toplevel(root)
 app6 = Tables(win6)
 
-#  another plot
+# another plot
 win7 = tk.Toplevel(root)
 app7 = Win1(win7)
 image7 = tk.PhotoImage(file='img/plot1.png')
