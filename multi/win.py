@@ -9,7 +9,7 @@ app = GUI(root)
 # image
 win1 = tk.Toplevel(root)
 app1 = Win1(win1)
-image = tk.PhotoImage(file='img/plot.png')
+image = tk.PhotoImage(file='img/plot1.png')
 label = tk.Label(win1, image=image)
 label.pack()
 
