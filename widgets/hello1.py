@@ -8,7 +8,7 @@ class Root(tk.Tk):
             self.items = []
         else:
             self.items = items
-        self.title("Regular GUI")
+        self.title("GUI")
         self.geometry("300x400")
         self.label = tk.Label(self, text="Desktop", fg="white", padx=5, pady=5)
         self.label.pack()
