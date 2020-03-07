@@ -5,7 +5,6 @@ built into the Python standard library, and it’s relatively painless to
 make applications with this framework.
 
 Several important Tkinter concepts:
-
 - How to work with **widgets**
 - How to control your application layout with **geometry managers**
 - How to make your applications **interactive**
