@@ -30,6 +30,7 @@ class GUI:
         self.label.pack()
 
     def new_window(self):
+        # new second level win
         self.new = tk.Toplevel(self.master)
         Win1(self.new)
 
