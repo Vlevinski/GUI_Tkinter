@@ -102,7 +102,7 @@ class Tables:
 
 class Framic:
     def __init__(self, master):
-        # frames window
+        # frames win
         self.master = master
         self.master.geometry("100x220")
         self.master.title("Framic")
