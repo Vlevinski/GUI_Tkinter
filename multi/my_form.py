@@ -6,9 +6,11 @@ class MyGui(tk.Tk):
         tk.Tk.__init__(self, parent)
         self.geometry= "500x300"
         self.title = "Main"
-#        self.pack()
+
+        # data
         self.txt1 = "Welcome Back !\n"
         self.txt2 = "To keep connected with us please login \n with your personal info"
+
         # frames
         frm1 = tk.Frame(self, bg="blue")
         frm2 = tk.Frame(self, bg="white")
