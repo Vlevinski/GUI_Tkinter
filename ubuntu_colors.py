@@ -91,7 +91,7 @@ row = 0
 col = 0
 
 for color in COLORS:
-    e = tk.Label(root, text=color, bg=color, font = (None, FONT_SIZE))
+    e = tk.Label(root, text=color, bg=color, font = ("Ubuntu Mono", FONT_SIZE,"bold"))
     e.grid(row=row, column=col, sticky=tk.E+tk.W)
     row+=1
     if(row>36):
