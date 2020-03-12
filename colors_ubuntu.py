@@ -82,9 +82,6 @@ COLORS = ['snow', 'ghost white', 'white smoke', 'gainsboro', 'floral white', 'ol
 
 
 root=tk.Tk()
-#sH = root.winfo_screenheight()
-#sW = root.winfo_screenwidth()
-#root.geometry(str(sW) + "x" + str(sH))
 root.title("Named Color Chart")
 
 row = 0
