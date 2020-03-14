@@ -2,7 +2,7 @@
 
 Tkinter is a compelling choice for a Python GUI framework because it’s
 built into the Python standard library, and it’s relatively painless to
-make applications with this framework.
+make applications with this  framework.
 
 Several important Tkinter concepts:
 - How to work with **widgets**
