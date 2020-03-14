@@ -11,4 +11,4 @@ Several important Tkinter concepts:
 - How to use five basic Tkinter** widgets** (Label, Button, Entry, Text, and Frame)
 - Timer, Calendar window
 
-![multi.png](Screenshot%20from%202020-02-27%2013-41-49.png)
+![multi.png](Screenshot_2020-02-27%2013-41-49.png)
