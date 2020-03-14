@@ -94,5 +94,6 @@ for color in COLORS:
     if(row>36):
         row=0
         col+=1
+
 root.mainloop()
 
