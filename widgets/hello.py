@@ -6,7 +6,7 @@ class Root(tk.Tk):
         super().__init__()
         self.title("GUI")
         self.geometry("300x400")
-        self.label = tk.Label(self, text="Desktop", fg="white", padx=5, pady=5)
+        self.label = tk.Label(self, text="GUI Desktop", fg="white", padx=5, pady=5)
         self.label.pack()
 
 
