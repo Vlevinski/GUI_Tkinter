@@ -2,3 +2,4 @@
          Notes from testing Tkinter class approach, Daily Scripts Board project
 
 ![Dashboard 2020-04-20 .png](Dashboard%202020-04-20%20.png)
+ Date: 30.04.2020
